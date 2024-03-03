@@ -87,11 +87,11 @@ public class Estudante {
         this.curso = curso;
     }
 
-    public boolean isMale(){
+    public boolean isMulher(){
         return sexo == 'M';
     }
 
-    public boolean isFemale() {
+    public boolean isHomem() {
         return sexo == 'F';
     }
 
@@ -101,9 +101,9 @@ public class Estudante {
 
     @Override
     public String toString(){
-        final String courseName = String.format("%-35s", curso == null ? "" : "Curso: " + curso.getNome());
+        final String cursos = String.format("%-35s", curso == null ? "" : "Curso: " + curso.getNome());
         return String.format(
                 "Id: %6d Nome: %-30s Sexo: %c Nota: %5.2f Ano Grad: %4d %s",
-                id, nome, sexo, nota, anoGraduacao, courseName);
+                id, nome, sexo, nota, anoGraduacao, cursos);
     }
 }
