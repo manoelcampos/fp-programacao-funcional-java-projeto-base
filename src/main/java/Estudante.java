@@ -87,18 +87,6 @@ public class Estudante {
         this.curso = curso;
     }
 
-    public boolean isMulher(){
-        return sexo == 'M';
-    }
-
-    public boolean isHomem() {
-        return sexo == 'F';
-    }
-
-    public boolean hasCourse() {
-        return curso != null;
-    }
-
     @Override
     public String toString(){
         final String cursos = String.format("%-35s", curso == null ? "" : "Curso: " + curso.getNome());
