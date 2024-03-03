@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Aplicação de exemplo de princípios de programação funcional em Java,
  * Expressões Lambda e API de Streams do Java 8.
- *
+ * <p>
  * Para aprofundar nestes assuntos, veja os links abaixo:
  *
  * <ul>
@@ -17,10 +17,10 @@ import java.util.List;
  * @author Manoel Campos da Silva Filho
  */
 public class AppProgramacaoFuncional {
-    private static final int TOTAL_STUDENTS = 10;
-    private final List<Estudante> estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
+    private static final int TOTAL_ESTUDANTES = 10;
+    private final List<Estudante> estudantes = StudentGenerator.generate(TOTAL_ESTUDANTES);
 
-    public AppProgramacaoFuncional(){
+    public AppProgramacaoFuncional() {
 
     }
 
