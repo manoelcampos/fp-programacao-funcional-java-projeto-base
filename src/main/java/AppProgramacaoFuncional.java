@@ -18,10 +18,10 @@ import java.util.List;
  */
 public class AppProgramacaoFuncional {
     private static final int TOTAL_STUDENTS = 10;
-    private final List<Estudante> estudantes;
+    private final List<Estudante> estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
 
     public AppProgramacaoFuncional(){
-        estudantes = StudentGenerator.generate(TOTAL_STUDENTS);
+
     }
 
     public static void main(String[] args) {
