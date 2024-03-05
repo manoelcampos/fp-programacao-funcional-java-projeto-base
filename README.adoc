@@ -1,9 +1,13 @@
 = Programação Funcional, Expressões Lambda e Streams no Java 17
 
-Este é projeto vque deve servir de base para você praticar programação funcional em Java com Streams e Lambds.
+Este é projeto que deve servir de base para você praticar programação funcional em Java com Streams e Lambdas.
 Implemente seu código na classe `AppProgramacaoFuncional`, que está praticamente vazia. Ela usa a classe `StudentGenerator`
 para gerar estudantes aleatoriamente. Assim, você tem dados para poder brincar.
 
 O código completo dos exemplos está disponível em http://github.com/manoelcampos/programacao-funcional-java.
 
+## Como usar o projeto para treinar programação funcional
 
+Este repositório é um template que você pode copiar clicando no botão "Use this template" no topo da página.
+Assim, será criada uma cópia do repositório que você pode alterar como desejado.
+**O botão só aparece se você estiver logado no GitHub.**
