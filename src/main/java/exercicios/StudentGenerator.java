@@ -1,3 +1,7 @@
+package exercicios;
+
+import lombok.NonNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -27,7 +31,7 @@ public class StudentGenerator {
     /**
      * Lista de campi em de uma instituição de ensino.
      */
-    private static final Campus[] CAMPI = {
+    public static final Campus[] CAMPI = {
         new Campus(1, "Palmas"),
         new Campus(2, "Porto Nacional"),
         new Campus(3, "Paraíso do Tocantins"),
@@ -35,7 +39,7 @@ public class StudentGenerator {
         new Campus(5, "Araguaína")
     };
 
-    private final Curso[] COURSES;
+    public final Curso[] COURSES;
 
     /**
      * Gerador de números aleatórios.
@@ -55,7 +59,7 @@ public class StudentGenerator {
     /**
      * Instanciar um gerador de estudantes aleatórios.
      * @param seed seed (semente) do gerador de números aleatórios.
-     *             Passando um valor diferente a cada instância de StudentGenerator
+     *             Passando um valor diferente a cada instância de exercicios.StudentGenerator
      *             irá gerar estudantes aleatórios diferentes.
      *             Passando o mesmo valor e chamando o {@link #generate(int)}
      *             múltiplas vezes irá gerar exatamente os mesmos estudantes, com
@@ -77,11 +81,12 @@ public class StudentGenerator {
     /**
      * Gera uma lista aleatória de alunos, que pode ser diferente a cada execução.
      * Alguns alunos podem não ser matriculados em curso nenhum,
-     * logo o atributo {@link Estudante#getCourse() course} será null.
+     * logo o atributo {@link Estudante#getCurso() course} será null.
      *
      * @param total total de alunos que deseja gerar
      * @return a lista de alunos gerados
      */
+    @NonNull
     public List<Estudante> generate(final int total){
         System.out.printf("Gerando %d estudantes!\n", total);
         final List<Estudante> list = new ArrayList<>(total);

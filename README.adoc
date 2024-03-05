@@ -16,3 +16,10 @@ Assim, será criada uma cópia do repositório que você pode alterar como desej
 
 - JDK 17 ou superior
 - IntelliJ IDE
+
+## Exercícios
+
+### Aula 4
+
+Abra a classe link:src/main/java/exercicios/Aula04.java[Aula04.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas. O nome da função deixa muito claro que a função
+Leia o JavaDoc disponível na classe, que contém instruções adicionais.

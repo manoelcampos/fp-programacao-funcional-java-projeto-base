@@ -1,5 +1,6 @@
 test-project/
 ~$*
+*Correcao*.java
 
 # Compiled class file
 *.class

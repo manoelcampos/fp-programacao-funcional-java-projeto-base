@@ -1,3 +1,5 @@
+package exercicios;
+
 /**
  * Representa um campus de uma instituição de ensino.
  *
