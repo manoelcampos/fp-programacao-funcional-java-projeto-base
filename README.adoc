@@ -6,18 +6,18 @@ para gerar estudantes aleatoriamente. Assim, você tem dados para poder brincar.
 
 O código completo dos exemplos está disponível em http://github.com/manoelcampos/programacao-funcional-java.
 
-## Como usar o projeto para treinar programação funcional
+## 1. Como usar o projeto para treinar programação funcional
 
 Este repositório é um template que você pode copiar clicando no botão "Use this template" no topo da página.
 Assim, será criada uma cópia do repositório que você pode alterar como desejado.
 **O botão só aparece se você estiver logado no GitHub.**
 
-## Ferramentas recomendadas
+## 2. Ferramentas recomendadas
 
 - JDK 17 ou superior
 - IntelliJ IDE
 
-## Exercícios
+## 3. Exercícios
 
 ### Aula 04
 
