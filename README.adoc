@@ -11,3 +11,8 @@ O código completo dos exemplos está disponível em http://github.com/manoelcam
 Este repositório é um template que você pode copiar clicando no botão "Use this template" no topo da página.
 Assim, será criada uma cópia do repositório que você pode alterar como desejado.
 **O botão só aparece se você estiver logado no GitHub.**
+
+## Ferramentas recomendadas
+
+- JDK 17 ou superior
+- IntelliJ IDE
