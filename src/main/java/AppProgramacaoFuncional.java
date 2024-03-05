@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class AppProgramacaoFuncional {
     private static final int TOTAL_ESTUDANTES = 10;
-    private final List<Estudante> estudantes = StudentGenerator.generate(TOTAL_ESTUDANTES);
+    private final List<Estudante> estudantes = new StudentGenerator().generate(TOTAL_ESTUDANTES);
 
     public AppProgramacaoFuncional() {
 
