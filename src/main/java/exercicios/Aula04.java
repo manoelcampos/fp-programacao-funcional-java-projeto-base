@@ -18,7 +18,7 @@ import java.util.stream.Stream;
  *
  * @author Manoel Campos da Silva Filho
  */
-@NonNull @NoArgsConstructor
+@NoArgsConstructor
 public class Aula04 extends Aula {
 
     /**
