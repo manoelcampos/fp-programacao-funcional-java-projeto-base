@@ -39,6 +39,21 @@ public class StudentGenerator {
         new Campus(5, "Araguaína")
     };
 
+    private final Estado[] states = {
+            new Estado("Tocantins", "TO"),
+            new Estado("Paraná", "PR"),
+            new Estado("São Paulo", "SP"),
+    };
+
+    private final Cidade[] CITIES = {
+            new Cidade("Palmas", states[0]),
+            new Cidade("Porto Nacional", states[0]),
+            new Cidade("Paraíso do Tocantins", states[0]),
+            new Cidade("Curitiba", states[1]),
+            new Cidade("São Paulo", states[2]),
+            new Cidade("Santos", states[2]),
+    };
+
     public final Curso[] COURSES;
 
     /**
@@ -100,7 +115,11 @@ public class StudentGenerator {
 
     public Estudante randStudent(final int id) {
         final char gender = randGender();
-        return new Estudante(id, randName(gender), gender, randScore(), randGradYear(), randCourse(COURSES, true));
+        return new Estudante(
+                id, randName(gender), gender, randScore(),
+                randGradYear(), randCourse(COURSES, true),
+                randCidade(CITIES)
+        );
     }
 
     /**
@@ -140,19 +159,23 @@ public class StudentGenerator {
     /**
      * Escolhe um curso aleatório para um aluno.
      *
-     * @param cours Lista de cursos existentes
+     * @param courses Lista de cursos existentes
      * @param enableNull Se true, indica que pode ser retornado um curso null.
      *                   Atribuindo tal resultado a um aluno, indica que
      *                   ele não está matriculado em nenhum curso.
      * @return
      */
-    private Curso randCourse(final Curso[] cours, final boolean enableNull){
+    private Curso randCourse(final Curso[] courses, final boolean enableNull){
         if(enableNull){
-            final int i = randInt(cours.length+1);
-            return i < cours.length ? cours[i] : null;
+            final int i = randInt(courses.length+1);
+            return i < courses.length ? courses[i] : null;
         }
 
-        return cours[randInt(cours.length)];
+        return courses[randInt(courses.length)];
+    }
+
+    private Cidade randCidade(final Cidade[] cities){
+        return cities[randInt(cities.length)];
     }
 
     private Campus randCampus(){

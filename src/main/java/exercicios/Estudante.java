@@ -14,8 +14,10 @@ public class Estudante {
     private int anoGraduacao;
     private Curso curso;
 
-    public Estudante(){
-    }
+    /**
+     * Cidade onde o estudante mora.
+     */
+    private Cidade cidade;
 
     /**
      * Cria um estudante.
@@ -32,13 +34,14 @@ public class Estudante {
      * @param anoGraduacao ano de graduação
      * @param curso curso matriculado
      */
-    Estudante(int id, String nome, char sexo, double nota, int anoGraduacao, Curso curso){
+    Estudante(int id, String nome, char sexo, double nota, int anoGraduacao, Curso curso, Cidade cidade){
         setId(id);
         setNome(nome);
         setSexo(sexo);
         setNota(nota);
         setAnoGraduacao(anoGraduacao);
         setCurso(curso);
+        setCidade(cidade);
     }
 
     public int getId() {
@@ -87,6 +90,14 @@ public class Estudante {
 
     public final void setCurso(Curso curso) {
         this.curso = curso;
+    }
+
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
 
     @Override
