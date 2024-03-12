@@ -1,7 +1,6 @@
 package exercicios;
 
 import exercicios.base.Aula;
-import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import java.util.stream.Stream;
@@ -18,14 +17,13 @@ import java.util.stream.Stream;
  *
  * @author Manoel Campos da Silva Filho
  */
-@NoArgsConstructor
 public class Aula04 extends Aula {
 
     /**
-     * Veja o método {@link #start()}.
+     * Veja o método construtor {@link #Aula04()}.
      */
     public static void main(String[] args) {
-        new Aula04().start();
+        new Aula04();
     }
 
     /**
@@ -34,18 +32,17 @@ public class Aula04 extends Aula {
      * Para verificar se sua implementação está correta, clique com o botão direito no nome do projeto na aba esquerda
      * do IntelliJ e selecione a opção "Run 'All Tests'".
      */
-    @Override
-    public void start() {
-        final var curso = getGenerator().COURSES[3];
+    public Aula04() {
+        final var curso = generator.COURSES[3];
         final char homem = 'M';
         final char mulher = 'F';
 
-        System.out.printf("Maior nota de todos os Estudantes: %.2f%n", maiorNotaTodosEstudantes(getEstudantes().stream()));
-        System.out.printf("Maior nota dos Estudantes homens: %.2f%n", maiorNotaHomens(getEstudantes().stream()));
-        System.out.printf("Maior nota das mulheres do curso de %s: %.2f%n", curso.getNome(), maiorNotaCursoAndSexo(getEstudantes().stream(), curso, mulher));
-        System.out.printf("Média de notas dos Estudantes do curso de %s: %.2f%n", curso.getNome(), mediaNotaTodosEstudantesCurso(getEstudantes().stream(), curso));
-        System.out.printf("Total dos homens do curso de %s: %d%n", curso.getNome(), totalEstudantesCursoAndSexo(getEstudantes().stream(), curso, homem));
-        System.out.printf("Total das mulheres do curso de %s: %d%n", curso.getNome(), totalEstudantesCursoAndSexo(getEstudantes().stream(), curso, mulher));
+        System.out.printf("Maior nota de todos os Estudantes: %.2f%n", maiorNotaTodosEstudantes(estudantes.stream()));
+        System.out.printf("Maior nota dos Estudantes homens: %.2f%n", maiorNotaHomens(estudantes.stream()));
+        System.out.printf("Maior nota das mulheres do curso de %s: %.2f%n", curso.getNome(), maiorNotaCursoAndSexo(estudantes.stream(), curso, mulher));
+        System.out.printf("Média de notas dos Estudantes do curso de %s: %.2f%n", curso.getNome(), mediaNotaTodosEstudantesCurso(estudantes.stream(), curso));
+        System.out.printf("Total dos homens do curso de %s: %d%n", curso.getNome(), totalEstudantesCursoAndSexo(estudantes.stream(), curso, homem));
+        System.out.printf("Total das mulheres do curso de %s: %d%n", curso.getNome(), totalEstudantesCursoAndSexo(estudantes.stream(), curso, mulher));
     }
 
     protected double maiorNotaCursoAndSexo(@NonNull final Stream<Estudante> stream, @NonNull final Curso curso, final char sexo) {
@@ -73,7 +70,5 @@ public class Aula04 extends Aula {
         // TODO: Você precisa implementar este método. Apague estas linhas e escreva o código correto.
         return -1;
     }
-
-    Aula04(final long seed) { super(seed); }
 }
 
