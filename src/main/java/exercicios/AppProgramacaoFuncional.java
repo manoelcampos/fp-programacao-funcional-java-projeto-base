@@ -10,9 +10,8 @@ import java.util.List;
  *
  * <ul>
  * <li><a href=
- * "https://www.oracle.com/technetwork/pt/articles/java/streams-api-java-8-3410098-ptb.html">exercicios.Curso
- * Streams e Expressões Lambda do Java 8</a></li>
- * <li><a href= "http://bit.ly/2I2U5bU">exercicios.Curso JDK 8 MOOC: Lambdas and Streams
+ * "https://www.oracle.com/technetwork/pt/articles/java/streams-api-java-8-3410098-ptb.html">Curso de Streams e Expressões Lambda do Java 8</a></li>
+ * <li><a href= "http://bit.ly/2I2U5bU">Curso JDK 8 MOOC: Lambdas and Streams
  * Introduction</a></li>
  * </ul>
  *
