@@ -6,20 +6,26 @@ para gerar estudantes aleatoriamente. Assim, você tem dados para poder brincar.
 
 O código completo dos exemplos está disponível em http://github.com/manoelcampos/programacao-funcional-java.
 
-## 1. Como usar o projeto para treinar programação funcional
+== 1. Como usar o projeto para treinar programação funcional
 
-Este repositório é um template que você pode copiar clicando no botão "Use this template" no topo da página.
+Este repositório é um template que você pode copiar clicando no botão "Fork" no topo da página.
 Assim, será criada uma cópia do repositório que você pode alterar como desejado.
 **O botão só aparece se você estiver logado no GitHub.**
 
-## 2. Ferramentas recomendadas
+== 2. Ferramentas recomendadas
 
 - JDK 17 ou superior
 - IntelliJ IDE
 
-## 3. Exercícios
+== 3. Exercícios
 
-### Aula 04
+Para todos os exercícios, leia todo o JavaDoc disponível na classe indicada, que contém instruções. Adicionalmente, procure por comentários iniciando em `TODO`, que contém indicações de partes do código que você **PRECISA** alterar.
 
-Abra a classe link:src/main/java/exercicios/Aula04.java[Aula04.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas. O nome da função deixa muito claro que a função
-Leia o JavaDoc disponível na classe, que contém instruções adicionais.
+=== Aula 04
+
+Abra a classe link:src/main/java/exercicios/Aula04.java[Aula04.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas. O nome da função deixa claro o que a função deve fazer.
+
+=== Aula 06
+
+Abra a classe link:src/main/java/exercicios/Aula06.java[Aula06.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas.
+
