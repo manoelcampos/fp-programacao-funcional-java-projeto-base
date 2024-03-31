@@ -28,7 +28,7 @@ public class Aula04 extends Aula {
      * do IntelliJ e selecione a opção "Run All Tests".
      */
     public Aula04() {
-        final var curso = generator.COURSES[3];
+        final var curso = generator.CURSOS[3];
         final char homem = 'M';
         final char mulher = 'F';
 

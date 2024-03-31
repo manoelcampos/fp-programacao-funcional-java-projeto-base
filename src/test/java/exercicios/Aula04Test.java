@@ -13,7 +13,7 @@ class Aula04Test {
 
     @BeforeEach
     void setUp() {
-        cursoMatematica = instance.generator.COURSES[3];
+        cursoMatematica = instance.generator.CURSOS[3];
     }
 
     @Test
