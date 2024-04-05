@@ -52,6 +52,14 @@
             <version>2.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <!-- Dependência para permitir usar anotação @Nullable,
+            para deixar explícito que um parâmetro pode ser null. -->
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>24.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
