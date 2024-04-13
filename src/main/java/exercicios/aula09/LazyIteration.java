@@ -21,7 +21,7 @@ public class LazyIteration {
         int soma = stream
                 .filter(n -> n >= 0)
                 .map(n -> n * 2)
-                .reduce(Integer::sum)
+                .reduce((subtotal, n) -> subtotal + n)
                 .orElse(0);
 
         System.out.printf("Java -> Soma: %d Tamanho da Lista: %d\n", soma, numeros.size());

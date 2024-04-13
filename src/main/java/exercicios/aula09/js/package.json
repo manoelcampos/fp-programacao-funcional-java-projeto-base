@@ -1,0 +1,7 @@
+{
+  "name": "aula09",
+  "version": "1.0.0",
+  "description": "Exemplo de como as operações filter, map e reduce percorrem um vetor várias vezes, no lugar de percorrer o vetor do início ao fim uma única vez",
+  "author": "Manoel Campos",
+  "type": "module"
+}

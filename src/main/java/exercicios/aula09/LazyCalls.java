@@ -37,13 +37,13 @@ public class LazyCalls {
         final long totalNumeros = stream
                 .map(n -> {
                     // Não será impresso pois o map não precisa ser executado
-                    System.out.printf("map: Math.abs(%d)\n", n);
+                    System.out.printf("map1: Math.abs(%d)\n", n);
                     return Math.abs(n);
 
                 })
                 .map(n -> {
                     // Não será impresso pois o map não precisa ser executado
-                    System.out.printf("map: %d * 100\n", n);
+                    System.out.printf("map2: %d * 100\n", n);
                     return n * 100;
 
                 })
