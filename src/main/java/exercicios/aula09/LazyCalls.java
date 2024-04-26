@@ -34,15 +34,22 @@ public class LazyCalls {
         final var numeros = List.of(-4, -3, -2, -1, 0, 1, 2, 3, 4, 5);
         final var stream = Interceptor.stream(numeros);
 
-        final long totalNumeros = stream
+        final long totalNumeros =
+            stream
                 .map(n -> {
-                    // Não será impresso pois o map não precisa ser executado
+                    /* Não será impresso pois o map não precisa ser executado
+                    quando a operação final é um count() e não temos outras
+                    operações como filter, skip ou limit (por exemplo).
+                    */
                     System.out.printf("map1: Math.abs(%d)\n", n);
                     return Math.abs(n);
 
                 })
                 .map(n -> {
-                    // Não será impresso pois o map não precisa ser executado
+                    /* Não será impresso pois o map não precisa ser executado
+                    quando a operação final é um count() e não temos outras
+                    operações como filter, skip ou limit (por exemplo).
+                    */
                     System.out.printf("map2: %d * 100\n", n);
                     return n * 100;
 
