@@ -17,7 +17,13 @@ Assim, será criada uma cópia do repositório que você pode alterar como desej
 - JDK 17 ou superior
 - IntelliJ IDE
 
-== 3. Exercícios
+== 3. Baixar o JavaDoc do JDK e de bibliotecas utilizadas
+
+- Abra um terminal na pasta raiz do projeto
+- No Linux ou macOS digite: `./mvnw dependency:resolve -Dclassifier=javadoc`
+- No Windows digite: `mvnw.cmd dependency:resolve -Dclassifier=javadoc`
+
+== 4. Exercícios
 
 Para todos os exercícios, leia todo o JavaDoc disponível na classe indicada, que contém instruções. Adicionalmente, procure por comentários iniciando em `TODO`, que contém indicações de partes do código que você **PRECISA** alterar.
 
