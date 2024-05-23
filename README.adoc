@@ -29,11 +29,11 @@ Para todos os exercícios, leia todo o JavaDoc disponível na classe indicada, q
 
 === Aula 01 (projeto externo)
 
-- [Soma do dobro dos números pares](https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js)
+- https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js[Soma do dobro dos números pares]
 
 === Aula 02 (projeto externo)
 
-- [Praticando Imutabilidade em Java](https://github.com/manoelcampos/fp-aula-02-imutabilidade-java)
+- https://github.com/manoelcampos/fp-aula-02-imutabilidade-java[Praticando Imutabilidade em Java]
 
 === Aula 04
 
@@ -45,6 +45,6 @@ Abra a classe link:src/main/java/exercicios/Aula06.java[Aula06.java] e implement
 
 == 5. Projetos para serem desenvolvidos
 
-- [Um projeto base em OpenJFX para desenhar polígonos na tela e permitir a implementação de algumas funções para descobrir o tipo de cada polígono e calcular seu perímetro usando Stream.map e Stream.flatMap](https://github.com/manoelcampos/fp-projeto-1-poligonos-flatmap)
+- https://github.com/manoelcampos/fp-projeto-1-poligonos-flatmap[Um projeto base em OpenJFX para desenhar polígonos na tela e permitir a implementação de algumas funções para descobrir o tipo de cada polígono e calcular seu perímetro usando Stream.map e Stream.flatMap]
 
 
