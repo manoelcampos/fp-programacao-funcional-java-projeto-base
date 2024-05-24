@@ -27,6 +27,14 @@ Assim, será criada uma cópia do repositório que você pode alterar como desej
 
 Para todos os exercícios, leia todo o JavaDoc disponível na classe indicada, que contém instruções. Adicionalmente, procure por comentários iniciando em `TODO`, que contém indicações de partes do código que você **PRECISA** alterar.
 
+=== Aula 01 (projeto externo)
+
+- https://github.com/manoelcampos/fp-aula-01-soma-dobro-pares-js[Soma do dobro dos números pares]
+
+=== Aula 02 (projeto externo)
+
+- https://github.com/manoelcampos/fp-aula-02-imutabilidade-java[Praticando Imutabilidade em Java]
+
 === Aula 04
 
 Abra a classe link:src/main/java/exercicios/Aula04.java[Aula04.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas. O nome da função deixa claro o que a função deve fazer.
@@ -34,4 +42,9 @@ Abra a classe link:src/main/java/exercicios/Aula04.java[Aula04.java] e implement
 === Aula 06
 
 Abra a classe link:src/main/java/exercicios/Aula06.java[Aula06.java] e implemente os métodos disponíveis lá. Tais métodos devem ser implementados utilizando Streams e Lambdas.
+
+== 5. Projetos para serem desenvolvidos
+
+- https://github.com/manoelcampos/fp-projeto-1-poligonos-flatmap[Um projeto base em OpenJFX para desenhar polígonos na tela e permitir a implementação de algumas funções para descobrir o tipo de cada polígono e calcular seu perímetro usando Stream.map e Stream.flatMap]
+
 
