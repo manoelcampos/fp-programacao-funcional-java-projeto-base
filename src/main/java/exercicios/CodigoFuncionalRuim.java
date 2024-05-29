@@ -36,7 +36,7 @@ public class CodigoFuncionalRuim {
      * O total de elementos em cada lista interna indica o tipo de polígono,
      * como triângulo, qudrilátero, pentágono, etc.
      */
-    private final List<List<Integer>> pontosPoligonos = List.of(
+    private final List<List<Integer>> distanciasPoligonos = List.of(
             List.of(10, 10, 10),
             List.of(25, 25, 25),
             List.of(20, 10, 20, 10),
@@ -189,7 +189,7 @@ public class CodigoFuncionalRuim {
      */
     private void codigoRuim4() {
         var nomePoligonos =
-            pontosPoligonos
+            distanciasPoligonos
               .stream()
               .map(distancias -> {
                  switch (distancias.size()) {
@@ -224,7 +224,7 @@ public class CodigoFuncionalRuim {
      */
     private void codigoRuim5() {
         var list =
-              Stream.of(pontosPoligonos)
+              Stream.of(distanciasPoligonos)
                     .filter(distancias -> distancias.size() >= 4)
                     .toList();
         System.out.println("Polígonos com mais de 3 lados: " + list);
@@ -247,14 +247,14 @@ public class CodigoFuncionalRuim {
      */
     private void codigoRuim6_1() {
         var perimetrosList =
-                pontosPoligonos.stream().flatMap(distancias -> {
+                distanciasPoligonos.stream().flatMap(distancias -> {
                     var perimetro = 0;
                     for (Integer distancia : distancias) {
                         perimetro += distancia;
                     }
                     return Stream.of(perimetro);
                 })
-                .toList();
+                                   .toList();
 
         System.out.println("Perímetros: " + perimetrosList);
     }
@@ -268,7 +268,7 @@ public class CodigoFuncionalRuim {
      */
     private void codigoRuim6_2() {
         var perimetrosList =
-                pontosPoligonos
+                distanciasPoligonos
                     .stream()
                     .flatMap(distancias -> {
                         var perimetro = distancias.stream().mapToInt(d -> d).sum();
