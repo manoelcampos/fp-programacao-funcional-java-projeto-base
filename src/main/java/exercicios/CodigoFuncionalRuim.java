@@ -72,7 +72,6 @@ public class CodigoFuncionalRuim {
 
         System.out.println();
         codigoRuim8();
-        correcao8();
     }
 
     public static void main(String[] args) {
@@ -347,12 +346,5 @@ public class CodigoFuncionalRuim {
                         .collect(toList());
 
         System.out.println("Lista de todas as cidades: " + lista);
-    }
-
-    /**
-     * Usa {@link Stream#toList()} para criar uma lista imutável por padrão.
-     */
-    private void correcao8() {
-
     }
 }
