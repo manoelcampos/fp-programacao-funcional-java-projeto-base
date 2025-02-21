@@ -9,7 +9,7 @@
     <version>1.1.0</version>
 
     <properties>
-        <java.version>22</java.version>
+        <java.version>23</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -77,11 +77,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>22</source>
-                    <target>22</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
-                </configuration>
             </plugin>
         </plugins>
     </build>

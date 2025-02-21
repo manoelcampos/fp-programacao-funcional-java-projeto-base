@@ -1,4 +1,4 @@
-= Programação Funcional, Expressões Lambda e Streams no Java 17
+= Programação Funcional, Expressões Lambda e Streams no Java 23
 
 Este é projeto que deve servir de base para você praticar programação funcional em Java com Streams e Lambdas.
 Implemente seu código na classe `AppProgramacaoFuncional`, que está praticamente vazia. Ela usa a classe `StudentGenerator`
@@ -14,7 +14,7 @@ Assim, será criada uma cópia do repositório que você pode alterar como desej
 
 == 2. Ferramentas recomendadas
 
-- JDK 17 ou superior
+- JDK 23 ou superior
 - IntelliJ IDE
 
 == 3. Baixar o JavaDoc do JDK e de bibliotecas utilizadas
