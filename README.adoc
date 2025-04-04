@@ -19,7 +19,14 @@ Assim, será criada uma cópia do repositório que você pode alterar como desej
 
 == 3. Baixar o JavaDoc do JDK e de bibliotecas utilizadas
 
-- Abra um terminal na pasta raiz do projeto
+===  Pelo IntelliJ
+
+Acesse a barra na lateral direita do IntelliJ, clique no botão `M` para abrir as configurações do projeto maven, e siga os passos da figura a seguir.
+
+image::download-javadoc-intellij.jpg[]
+
+===  Pelo terminal na pasta raiz do projeto
+
 - No Linux ou macOS digite: `./mvnw dependency:resolve -Dclassifier=javadoc`
 - No Windows digite: `mvnw.cmd dependency:resolve -Dclassifier=javadoc`
 
